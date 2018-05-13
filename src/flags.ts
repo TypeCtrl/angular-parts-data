@@ -7,16 +7,15 @@ export function flags(info: NPM) {
     rxjs6: null,
   };
   if (info.peerDependencies) {
-    res.rxjs6 = rxjs6(info);
+    res.rxjs6 = rxjs6(info.peerDependencies);
   }
   return res;
 }
 
-export function rxjs6(info: NPM) {
-  // TODO: maybe look at dependencies as well.
-  const peer = semver.coerce(info.peerDependencies.rxjs);
-  if (!peer) {
+export function rxjs6(peerDependencies: { [name: string]: string }) {
+  // TODO: maybe look at dependencies as well?
+  if (!peerDependencies.rxjs) {
     return null;
   }
-  return semver.satisfies('6.0.0', peer.version);
+  return semver.satisfies('6.0.0', peerDependencies.rxjs);
 }

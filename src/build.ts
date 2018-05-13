@@ -31,10 +31,11 @@ async function build() {
       // add custom flags
       if (!current) {
         add.push(info);
-        console.log('PUSHING', pkg.name);
+        console.log('ADDING', pkg.name);
         continue;
       }
       info.objectID = current.objectID;
+      console.log('UPDATING', pkg.name);
       update.push(info);
     }
     if (add.length) {

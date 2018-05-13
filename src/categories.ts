@@ -1,5 +1,6 @@
 export const enum Categories {
   ANIMATIONS = 'Animations',
+  /** Boilerplate / scaffold / Yeoman / stack ensemble / seed */
   SCHEMATICS = 'Schematics',
   LAYOUT = 'Layout',
   /** serverside rendering, Universal */
@@ -35,10 +36,9 @@ export const enum Categories {
   /** helpers for commonjs packages */
   WRAPPER = 'Wrapper',
   FORMS = 'Forms',
+  /** routing, routing permissions, auth */
   ROUTING = 'Routing',
   I18N = 'i18n',
-  /** Boilerplate / scaffold / Yeoman / stack ensemble / seed */
-  BOILERPLATE = 'Boilerplate',
   DATE = 'Date',
   AUTOCOMPLETE = 'Autocomplete',
   COLOR = 'Color',

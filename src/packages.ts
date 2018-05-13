@@ -407,4 +407,88 @@ export const packages: AngularPackage[] = [
     name: 'codelyzer',
     categories: [CT.PRACTICES],
   },
+  {
+    name: 'ngx-page-scroll',
+    categories: [CT.SCROLL],
+  },
+  {
+    name: '@ctrl/ngx-csv',
+    categories: [],
+  },
+  {
+    name: '@ctrl/ngx-github-buttons',
+    categories: [],
+  },
+  {
+    name: 'angular-router-loader',
+    categories: [CT.ROUTING],
+  },
+  {
+    name: 'ngx-permissions',
+    categories: [CT.ROUTING],
+  },
+  {
+    name: 'ng-router-loader',
+    categories: [CT.ROUTING],
+  },
+  {
+    name: '@ngx-i18n-router/core',
+    categories: [CT.ROUTING, CT.I18N],
+  },
+  {
+    name: '@ngrx/schematics',
+    categories: [CT.SCHEMATICS],
+  },
+  {
+    name: '@ngrx/effects',
+    categories: [CT.DATA_FLOW],
+  },
+  {
+    name: '@ngrx/router-store',
+    categories: [CT.ROUTING, CT.DATA_FLOW],
+  },
+  {
+    name: '@uirouter/angular',
+    categories: [CT.ROUTING, CT.CORE],
+  },
+  {
+    name: '@ngxs/store',
+    categories: [CT.DATA_FLOW],
+  },
+  {
+    name: '@ngxs/logger-plugin',
+    categories: [CT.DATA_FLOW],
+  },
+  {
+    name: '@ngxs/devtools-plugin',
+    categories: [CT.DATA_FLOW],
+  },
+  {
+    name: '@ngxs/storage-plugin',
+    categories: [CT.DATA_FLOW],
+  },
+  {
+    name: '@ngxs/form-plugin',
+    categories: [CT.DATA_FLOW, CT.FORMS],
+  },
+  {
+    name: '@ngxs/websocket-plugin',
+    categories: [CT.DATA_FLOW, CT.HTTP],
+  },
+  {
+    name: '@ngxs/router-plugin',
+    categories: [CT.DATA_FLOW, CT.ROUTING],
+  },
+  {
+    name: '@ctrl/ngx-headroom',
+    categories: [],
+  },
+  {
+    name: 'angular-calendar',
+    categories: [CT.DATE],
+  },
+  {
+    name: 'ap-angular2-fullcalendar',
+    categories: [CT.DATE],
+  },
 ];
