@@ -554,53 +554,89 @@ export const packages: AngularPackage[] = [
   {
     name: 'angular-linky',
     categories: [CT.WRAPPER],
-  },{
+  },
+  {
     name: 'ng-animate',
     categories: [CT.ANIMATIONS],
-  },{
+  },
+  {
     name: 'angular2-template-loader',
     categories: [],
-  },{
+  },
+  {
     name: 'angular2-logger',
     categories: [],
-  },{
+  },
+  {
     name: 'ng2-meta',
     categories: [],
-  },{
+  },
+  {
     name: '@ngx-meta/core',
     categories: [],
-  },{
+  },
+  {
     name: 'angular2-disqus',
     categories: [CT.WRAPPER],
-  },{
+  },
+  {
     name: 'angularfire2',
     categories: [CT.WRAPPER],
-  },{
+  },
+  {
     name: 'ngx-disqus',
     categories: [CT.WRAPPER],
-  },{
+  },
+  {
     name: 'angular2-recaptcha',
     categories: [CT.WRAPPER],
-  },{
+  },
+  {
     name: 'ng-recaptcha',
     categories: [CT.WRAPPER],
-  },{
+  },
+  {
     name: 'angular2-cloudtasks',
     categories: [CT.WRAPPER],
-  },{
+  },
+  {
     name: 'pubnub-angular2',
     categories: [CT.WRAPPER],
-  },{
+  },
+  {
     name: 'augury-extension',
     categories: [],
-  },{
+  },
+  {
     name: 'angular2-prettyjson',
     categories: [CT.WRAPPER],
-  },{
+  },
+  {
     name: 'angular-playground',
     categories: [],
-  },{
+  },
+  {
     name: '@compodoc/ngd-cli',
     categories: [CT.SCHEMATICS],
+  },
+  {
+    name: '@ctrl/ngx-emoji-mart',
+    categories: [CT.FORMS],
+  },
+  {
+    name: 'ngx-emoji',
+    categories: [CT.FORMS],
+  },
+  {
+    name: 'ng-emoji-picker',
+    categories: [CT.FORMS],
+  },
+  {
+    name: 'angular2-emoji-picker',
+    categories: [CT.FORMS],
+  },
+  {
+    name: 'ng2-emojify',
+    categories: [CT.FORMS],
   },
 ];
