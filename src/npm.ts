@@ -37,7 +37,7 @@ function fromJson(json: any): NPM {
     license: json.collected.metadata.license,
     // readme: json.collected.metadata.readme,
     keywords: json.collected.metadata.keywords,
-    stars: json.collected.github.starsCount,
+    stars: _.get(json, 'collected.github.starsCount'),
     downloadsCount: json.evaluation.popularity.downloadsCount,
     downloadsAcceleration: json.evaluation.popularity.downloadsAcceleration,
     score: json.score.final,

@@ -12,6 +12,54 @@ export const packages: AngularPackage[] = [
     categories: [CT.UI_FRAMEWORKS],
   },
   {
+    name: '@angular/cdk',
+    categories: [CT.UI_FRAMEWORKS, CT.CORE],
+  },
+  {
+    name: 'onsenui',
+    categories: [CT.UI_FRAMEWORKS, CT.MOBILE],
+  },
+  {
+    name: 'ngx-bootstrap',
+    categories: [CT.UI_FRAMEWORKS],
+  },
+  {
+    name: '@ng-bootstrap/ng-bootstrap',
+    categories: [CT.UI_FRAMEWORKS],
+  },
+  {
+    name: 'primeng',
+    categories: [CT.UI_FRAMEWORKS],
+  },
+  {
+    name: '@clr/angular',
+    categories: [CT.UI_FRAMEWORKS],
+  },
+  {
+    name: 'ng-semantic',
+    categories: [CT.UI_FRAMEWORKS],
+  },
+  {
+    name: 'ng2-semantic-ui',
+    categories: [CT.UI_FRAMEWORKS],
+  },
+  {
+    name: 'ng-lightning',
+    categories: [CT.UI_FRAMEWORKS],
+  },
+  {
+    name: '@covalent/core',
+    categories: [CT.UI_FRAMEWORKS],
+  },
+  {
+    name: '@angular-mdl/core',
+    categories: [CT.UI_FRAMEWORKS],
+  },
+  {
+    name: 'devextreme-angular',
+    categories: [CT.UI_FRAMEWORKS],
+  },
+  {
     name: 'ngx-toastr',
     categories: [CT.NOTIFICATION],
   },

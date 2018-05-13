@@ -7,72 +7,34 @@
   "scripts": {
     "lint": "tslint -p tsconfig.json -t stylish 'src/**/*.ts' 'test/**/*.ts'",
     "lint:fix": "tslint -p tsconfig.json -t stylish --fix 'src/**/*.ts' 'test/**/*.ts'",
-    "lint-staged": "lint-staged",
     "prebuild": "rimraf dist",
     "build": "ts-node ./src/build.ts",
     "test": "jest",
     "test:watch": "jest --watch",
-    "test:prod": "npm run test -- --coverage --no-cache",
-    "commit": "git-cz",
-    "commitlint": "commitlint -e $GIT_PARAMS",
-    "travis-deploy-once": "travis-deploy-once",
-    "semantic-release": "cd dist/package-dist && semantic-release"
+    "test:prod": "npm run test -- --coverage --no-cache"
   },
   "dependencies": {
-    "algoliasearch": "^3.26.0",
-    "got": "^8.3.0",
-    "lodash": "^4.17.5"
+    "algoliasearch": "^3.27.1",
+    "got": "^8.3.1",
+    "lodash": "^4.17.10"
   },
   "devDependencies": {
-    "@commitlint/cli": "^6.1.3",
-    "@commitlint/config-conventional": "^6.1.3",
-    "@types/algoliasearch": "^3.24.9",
-    "@types/got": "^7.1.8",
-    "@types/jest": "^22.2.2",
-    "@types/lodash": "^4.14.106",
-    "@types/node": "^9.6.2",
-    "commitizen": "^2.9.6",
-    "cz-conventional-changelog": "^2.1.0",
-    "husky": "^0.15.0-rc.13",
-    "lint-staged": "^7.0.4",
-    "prettier": "^1.11.1",
+    "@types/algoliasearch": "^3.27.1",
+    "@types/got": "^8.3.1",
+    "@types/jest": "^22.2.3",
+    "@types/lodash": "^4.14.108",
+    "@types/node": "^10.0.8",
+    "lint-staged": "^7.1.0",
     "rimraf": "^2.6.2",
-    "semantic-release": "^15.1.5",
-    "travis-deploy-once": "^4.4.1",
-    "ts-node": "^5.0.1",
-    "tslint": "^5.9.1",
-    "tslint-config-prettier": "^1.10.0",
+    "ts-node": "^6.0.3",
+    "tslint": "^5.10.0",
+    "tslint-config-prettier": "^1.12.0",
     "tslint-config-standard": "^7.0.0",
-    "typescript": "^2.8.1"
+    "typescript": "^2.8.3"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/TypeCtrl/angular-parts-data.git"
-  },
-  "release": {
-    "branch": "master"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint-staged",
-      "commit-msg": "npm run commitlint"
-    }
-  },
-  "lint-staged": {
-    "*.ts": [
-      "prettier --write",
-      "git add"
-    ]
-  },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
-  },
-  "config": {
-    "commitizen": {
-      "path": "cz-conventional-changelog"
-    }
   },
   "jest": {
     "transform": {
@@ -88,17 +50,9 @@
       "<rootDir>/node_modules/",
       "<rootDir>/test/"
     ],
-    "coverageThreshold": {
-      "global": {
-        "branches": 80,
-        "functions": 80,
-        "lines": 80,
-        "statements": -10
-      }
-    },
     "collectCoverage": true
   },
   "engines": {
-    "node": ">=6.0.0"
+    "node": ">=8.0.0"
   }
 }

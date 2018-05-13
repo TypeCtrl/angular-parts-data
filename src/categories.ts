@@ -3,6 +3,8 @@ export const enum Categories {
   CORE = 'Core',
   /** Overlay / modal / alert / dialog / lightbox / popup / portal */
   OVERLAY = 'Overlay',
+  /** heavily mobile focused like onsen or ionic */
+  MOBILE = 'Mobile',
   /** Toaster / snackbar */
   NOTIFICATION = 'Notification',
   /** Table / Data Grid */
@@ -17,10 +19,11 @@ export const enum Categories {
   SCROLL = 'Scroll',
   /** Drag n Drop */
   DRAG = 'Drag',
+  HTTP = 'Http',
   /** Carousel */
   IMAGES = 'Images',
-  /** audio, video */
-  PLAYERS = 'Players',
+  /** audio video players embeders */
+  AV = 'Audio Video',
   /** svg, etc */
   ICONS = 'Icons',
   /** Large set of general use components used throughout application */

@@ -1,5 +1,4 @@
 {
-  "compileOnSave": false,
   "compilerOptions": {
     "declaration": true,
     "importHelpers": true,
@@ -11,11 +10,12 @@
     "sourceMap": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "target": "es5",
+    "target": "es2015",
     "typeRoots": ["node_modules/@types"],
-    "outDir": "dist/package-dist"
+    "outDir": "dist"
   },
-  "files": [
-    "./src/public_api"
-  ]
+  "exclude": [
+		"node_modules",
+		"dist"
+	]
 }
