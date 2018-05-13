@@ -88,12 +88,28 @@ export const packages: AngularPackage[] = [
     categories: [CT.DRAG],
   },
   {
+    name: 'ngx-dnd',
+    categories: [CT.DRAG],
+  },
+  {
     name: 'ng-drag-drop',
     categories: [CT.DRAG],
   },
   {
     name: '@swimlane/ngx-datatable',
     categories: [CT.DATA_TABLE],
+  },
+  {
+    name: '@swimlane/ngx-charts',
+    categories: [CT.DATA_TABLE],
+  },
+  {
+    name: '@swimlane/ngx-ui',
+    categories: [CT.UI_FRAMEWORKS],
+  },
+  {
+    name: '@swimlane/ngx-graph',
+    categories: [CT.CHARTS],
   },
   {
     name: 'ng2-table',
