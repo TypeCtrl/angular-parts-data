@@ -40,10 +40,6 @@ export const packages: AngularPackage[] = [
     categories: [CT.UI_FRAMEWORKS],
   },
   {
-    name: 'ng2-semantic-ui',
-    categories: [CT.UI_FRAMEWORKS],
-  },
-  {
     name: 'ng-lightning',
     categories: [CT.UI_FRAMEWORKS],
   },
@@ -53,10 +49,6 @@ export const packages: AngularPackage[] = [
   },
   {
     name: '@angular-mdl/core',
-    categories: [CT.UI_FRAMEWORKS],
-  },
-  {
-    name: 'devextreme-angular',
     categories: [CT.UI_FRAMEWORKS],
   },
   {
@@ -98,5 +90,297 @@ export const packages: AngularPackage[] = [
   {
     name: 'ng-drag-drop',
     categories: [CT.DRAG],
+  },
+  {
+    name: '@swimlane/ngx-datatable',
+    categories: [CT.DATA_TABLE],
+  },
+  {
+    name: 'ng2-table',
+    categories: [CT.DATA_TABLE],
+  },
+  {
+    name: 'angular2-datatable',
+    categories: [CT.DATA_TABLE],
+  },
+  {
+    name: 'ng2-easy-table',
+    categories: [CT.DATA_TABLE],
+  },
+  {
+    name: 'ng2-handsontable',
+    categories: [CT.DATA_TABLE],
+  },
+  {
+    name: 'ag-grid-angular',
+    categories: [CT.DATA_TABLE],
+  },
+  {
+    name: 'ng2-smart-table',
+    categories: [CT.DATA_TABLE],
+  },
+  {
+    name: 'ng2-tree',
+    categories: [CT.DATA_TABLE],
+  },
+  {
+    name: 'angular2-tree-component',
+    categories: [CT.DATA_TABLE],
+  },
+  {
+    name: '@ngx-loading-bar/router',
+    categories: [CT.ROUTING],
+  },
+  {
+    name: '@ngx-loading-bar/http-client',
+    categories: [CT.HTTP],
+  },
+  {
+    name: '@ngx-loading-bar/http',
+    categories: [CT.HTTP],
+  },
+  {
+    name: '@ngx-loading-bar/core',
+    categories: [],
+  },
+  {
+    name: '@nrwl/schematics',
+    categories: [CT.SCHEMATICS],
+  },
+  {
+    name: '@angular/cli',
+    categories: [CT.CORE, CT.SCHEMATICS],
+  },
+  {
+    name: '@nrwl/nx',
+    categories: [],
+  },
+  {
+    name: 'ngx-charts',
+    categories: [CT.CHARTS, CT.WRAPPER],
+  },
+  {
+    name: 'ng2-charts',
+    categories: [CT.CHARTS, CT.WRAPPER],
+  },
+  {
+    name: 'angular2-highcharts',
+    categories: [CT.CHARTS, CT.WRAPPER],
+  },
+  {
+    name: 'ng2-nvd3',
+    categories: [CT.CHARTS, CT.WRAPPER],
+  },
+  {
+    name: '@agm/core',
+    categories: [CT.WRAPPER],
+  },
+  {
+    name: '@ngui/map',
+    categories: [CT.WRAPPER],
+  },
+  {
+    name: 'angular-esri-components',
+    categories: [CT.WRAPPER],
+  },
+  {
+    name: 'ngx-infinite-scroll',
+    categories: [CT.SCROLL],
+  },
+  {
+    name: 'ng2-datepicker',
+    categories: [CT.DATE, CT.FORMS],
+  },
+  {
+    name: 'mydatepicker',
+    categories: [CT.DATE, CT.FORMS],
+  },
+  {
+    name: 'ng2-date-picker',
+    categories: [CT.DATE, CT.FORMS],
+  },
+  {
+    name: 'ng2-datetime',
+    categories: [CT.DATE, CT.FORMS],
+  },
+  {
+    name: 'ngx-color-picker',
+    categories: [CT.FORMS, CT.COLOR],
+  },
+  {
+    name: 'ngx-color',
+    categories: [CT.FORMS, CT.COLOR],
+  },
+  {
+    name: 'angular2-color-picker',
+    categories: [CT.FORMS, CT.COLOR],
+  },
+  {
+    name: 'ng2-color-picker',
+    categories: [CT.FORMS, CT.COLOR],
+  },
+  {
+    name: 'ng2-completer',
+    categories: [CT.AUTOCOMPLETE],
+  },
+  {
+    name: 'ng2-auto-complete',
+    categories: [CT.AUTOCOMPLETE],
+  },
+  {
+    name: 'ng2-tag-input',
+    categories: [CT.FORMS],
+  },
+  {
+    name: 'angular-sortablejs',
+    categories: [CT.DATA_FLOW],
+  },
+  {
+    name: 'angular2-text-mask',
+    categories: [CT.FORMS],
+  },
+  {
+    name: 'soft-angular-mask',
+    categories: [CT.FORMS],
+  },
+  {
+    name: '@ctrl/ngx-codemirror',
+    categories: [CT.WRAPPER],
+  },
+  {
+    name: 'ng2-codemirror',
+    categories: [CT.WRAPPER],
+  },
+  {
+    name: 'angular2-voog-wysihtml',
+    categories: [CT.WRAPPER],
+  },
+  {
+    name: 'angular2-froala-wysiwyg',
+    categories: [CT.WRAPPER],
+  },
+  {
+    name: 'ng2-file-upload',
+    categories: [CT.FORMS],
+  },
+  {
+    name: 'ngx-uploader',
+    categories: [CT.FORMS],
+  },
+  {
+    name: 'angular2-dropzone-wrapper',
+    categories: [CT.FORMS],
+  },
+  {
+    name: 'angular2-autosize',
+    categories: [CT.FORMS],
+  },
+  {
+    name: 'angular2-calendar',
+    categories: [CT.FORMS, CT.DATE],
+  },
+  {
+    name: 'angular2-fullcalendar',
+    categories: [CT.FORMS, CT.DATE],
+  },
+  {
+    name: 'ng2-img-cropper',
+    categories: [],
+  },
+  {
+    name: 'angular2-grid',
+    categories: [CT.LAYOUT],
+  },
+  {
+    name: 'ngx-fullpage',
+    categories: [CT.LAYOUT],
+  },
+  {
+    name: 'angular-split',
+    categories: [CT.LAYOUT],
+  },
+  {
+    name: 'ngresizable',
+    categories: [CT.LAYOUT],
+  },
+  {
+    name: '@angular/flex-layout',
+    categories: [CT.LAYOUT],
+  },
+  {
+    name: 'angular2-materialize',
+    categories: [CT.UI_FRAMEWORKS],
+  },
+  {
+    name: 'ng2-semantic-ui',
+    categories: [CT.UI_FRAMEWORKS],
+  },
+  {
+    name: 'clarity-angular',
+    categories: [CT.UI_FRAMEWORKS],
+  },
+  {
+    name: 'igniteui-angular',
+    categories: [CT.UI_FRAMEWORKS],
+  },
+  {
+    name: 'igniteui-angular-wrappers',
+    categories: [CT.WRAPPER, CT.UI_FRAMEWORKS],
+  },
+  {
+    name: 'md2',
+    categories: [CT.UI_FRAMEWORKS],
+  },
+  {
+    name: 'devextreme',
+    categories: [CT.UI_FRAMEWORKS],
+  },
+  {
+    name: 'devextreme-angular',
+    categories: [CT.UI_FRAMEWORKS],
+  },
+  {
+    name: 'ng-zorro-antd',
+    categories: [CT.UI_FRAMEWORKS],
+  },
+  {
+    name: 'ionic2',
+    categories: [CT.MOBILE],
+  },
+  {
+    name: 'angular2-onsenui',
+    categories: [CT.MOBILE],
+  },
+  {
+    name: 'ngx-admin',
+    categories: [CT.UI_FRAMEWORKS],
+  },
+  {
+    name: 'angular-ssr',
+    categories: [CT.SSR],
+  },
+  {
+    name: '@angular-redux/store',
+    categories: [CT.DATA_FLOW],
+  },
+  {
+    name: '@ngrx/store',
+    categories: [CT.DATA_FLOW],
+  },
+  {
+    name: 'mobx-angular',
+    categories: [CT.DATA_FLOW],
+  },
+  {
+    name: '@ngx-config/core',
+    categories: [CT.CORE],
+  },
+  {
+    name: 'apollo-angular',
+    categories: [CT.SSR],
+  },
+  {
+    name: 'codelyzer',
+    categories: [CT.PRACTICES],
   },
 ];

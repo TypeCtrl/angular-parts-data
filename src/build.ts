@@ -3,6 +3,7 @@ import * as _ from 'lodash';
 
 import { packages } from './packages';
 import * as npm from './npm';
+import { flags } from './flags';
 
 if (!process.env.ALGOLIA_KEY) {
   throw TypeError('provide ALGOLIA_KEY');
@@ -21,10 +22,12 @@ async function build() {
         typoTolerance: false,
         restrictSearchableAttributes: ['name'],
       });
-      const info: any = await npm.get(pkg.name);
-      // console.log(info);
+      // get data from npms.io
+      let info: any = await npm.get(pkg.name);
+      info = { ...info, ...flags(info) };
+      // set tags for algolia
       info._tags = pkg.categories;
-      // console.log(current);
+      // add custom flags
       if (!current.nbHits || current.hits[0].name !== pkg.name) {
         add.push(info);
         console.log('PUSHING', pkg.name);

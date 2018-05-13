@@ -1,5 +1,9 @@
 export const enum Categories {
   ANIMATIONS = 'Animations',
+  SCHEMATICS = 'Schematics',
+  LAYOUT = 'Layout',
+  /** serverside rendering, Universal */
+  SSR = 'SSR',
   CORE = 'Core',
   /** Overlay / modal / alert / dialog / lightbox / popup / portal */
   OVERLAY = 'Overlay',
@@ -9,9 +13,9 @@ export const enum Categories {
   NOTIFICATION = 'Notification',
   /** Table / Data Grid */
   DATA_TABLE = 'Data Table',
-  /** redux, rxjs */
+  /** redux, rxjs, pipes */
   DATA_FLOW = 'Data flow',
-  /** linters, code style */
+  /** linters, code style, codelyzer */
   PRACTICES = 'Practices',
   /** graphs, sparklines, d3 */
   CHARTS = 'Charts',
@@ -35,4 +39,7 @@ export const enum Categories {
   I18N = 'i18n',
   /** Boilerplate / scaffold / Yeoman / stack ensemble / seed */
   BOILERPLATE = 'Boilerplate',
+  DATE = 'Date',
+  AUTOCOMPLETE = 'Autocomplete',
+  COLOR = 'Color',
 }

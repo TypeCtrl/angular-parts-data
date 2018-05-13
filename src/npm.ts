@@ -1,7 +1,7 @@
 import * as got from 'got';
 import * as _ from 'lodash';
 
-interface NPM {
+export interface NPM {
   analyzed: number;
   name: string;
   version: string;
@@ -23,6 +23,7 @@ interface NPM {
   repositoryUrl?: string;
   npmUrl?: string;
   issuesUrl?: string;
+  peerDependencies: { [name: string]: string };
 }
 
 function fromJson(json: any): NPM {
@@ -35,6 +36,7 @@ function fromJson(json: any): NPM {
     deprecated: json.collected.metadata.deprecated,
     author: _.get(json, 'collected.metadata.author.name'),
     license: json.collected.metadata.license,
+    peerDependencies: json.collected.metadata.peerDependencies,
     // readme: json.collected.metadata.readme,
     keywords: json.collected.metadata.keywords,
     stars: _.get(json, 'collected.github.starsCount'),
