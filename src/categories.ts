@@ -45,4 +45,5 @@ export const enum Categories {
   COLOR = 'Color',
   AUTOCOMPLETE = 'Autocomplete',
   DATE = 'Date',
+  SELECT = 'Select',
 }

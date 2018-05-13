@@ -88,6 +88,10 @@ export const packages: AngularPackage[] = [
     categories: [CT.DRAG],
   },
   {
+    name: 'angular-draggable-droppable',
+    categories: [CT.DRAG],
+  },
+  {
     name: 'ngx-dnd',
     categories: [CT.DRAG],
   },
@@ -122,6 +126,10 @@ export const packages: AngularPackage[] = [
   {
     name: 'ng2-table',
     categories: [CT.DATA_TABLE],
+  },
+  {
+    name: 'ng2-progress',
+    categories: [],
   },
   {
     name: 'angular2-datatable',
@@ -638,5 +646,101 @@ export const packages: AngularPackage[] = [
   {
     name: 'ng2-emojify',
     categories: [CT.FORMS],
+  },
+  {
+    name: '@auth0/angular-jwt',
+    categories: [],
+  },
+  {
+    name: '@ngx-auth/auth0',
+    categories: [],
+  },
+  {
+    name: '@elderbyte/ngx-jwt-auth',
+    categories: [],
+  },
+  {
+    name: '@ngx-auth/core',
+    categories: [],
+  },
+  {
+    name: 'ng2-jwt',
+    categories: [],
+  },
+  {
+    name: 'frontal',
+    categories: [CT.SELECT],
+  },
+  {
+    name: 'ng2-select',
+    categories: [CT.SELECT],
+  },
+  {
+    name: 'ng-select',
+    categories: [CT.SELECT],
+  },
+  {
+    name: '@ng-select/ng-select',
+    categories: [CT.SELECT],
+  },
+  {
+    name: 'ng-selectize',
+    categories: [CT.SELECT],
+  },
+  {
+    name: 'ngx-select-ex',
+    categories: [CT.SELECT],
+  },
+  {
+    name: 'angular-selector',
+    categories: [CT.SELECT],
+  },
+  {
+    name: 'ngx-mat-select-search',
+    categories: [CT.SELECT],
+  },
+  {
+    name: 'ngx-select-dropdown',
+    categories: [CT.SELECT],
+  },
+  {
+    name: '@halaz.lazlo/ngx-select',
+    categories: [CT.SELECT],
+  },
+  {
+    name: 'ngx-translate-parser-plural-select',
+    categories: [CT.SELECT, CT.I18N],
+  },
+  {
+    name: 'ngx-select-box',
+    categories: [CT.SELECT],
+  },
+  {
+    name: 'ng2-iq-select2',
+    categories: [CT.SELECT],
+  },
+  {
+    name: 'ngx-papaparse',
+    categories: [],
+  },
+  {
+    name: 'angular-bootstrap-datetimepicker',
+    categories: [CT.DATE],
+  },
+  {
+    name: 'ng2-timezone-selector',
+    categories: [CT.DATE, CT.WRAPPER],
+  },
+  {
+    name: 'ng2-adsense',
+    categories: [CT.WRAPPER],
+  },
+  {
+    name: 'ngx-trend',
+    categories: [CT.CHARTS],
+  },
+  {
+    name: '@fortawesome/angular-fontawesome',
+    categories: [CT.ICONS],
   },
 ];
