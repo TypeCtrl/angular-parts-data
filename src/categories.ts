@@ -2,17 +2,21 @@ export const enum Categories {
   ANIMATIONS = 'Animations',
   /** Boilerplate / scaffold / Yeoman / stack ensemble / seed */
   SCHEMATICS = 'Schematics',
+  /** responsive, flexbox, css grid */
   LAYOUT = 'Layout',
   /** serverside rendering, Universal */
   SSR = 'SSR',
+  /** replacements for @angular/core or similar */
   CORE = 'Core',
-  /** Overlay / modal / alert / dialog / lightbox / popup / portal */
+  /** routing, routing permissions, auth */
+  ROUTING = 'Routing',
+  /** Overlay, modal, dialog, lightbox, popup, portal */
   OVERLAY = 'Overlay',
-  /** heavily mobile focused like onsen or ionic */
+  /** mobile focused like onsen or ionic */
   MOBILE = 'Mobile',
-  /** Toaster / snackbar */
+  /** Toast, snackbar, alert */
   NOTIFICATION = 'Notification',
-  /** Table / Data Grid */
+  /** Table, Data Grid */
   DATA_TABLE = 'Data Table',
   /** redux, rxjs, pipes */
   DATA_FLOW = 'Data flow',
@@ -35,11 +39,10 @@ export const enum Categories {
   UI_FRAMEWORKS = 'UI Frameworks',
   /** helpers for commonjs packages */
   WRAPPER = 'Wrapper',
-  FORMS = 'Forms',
-  /** routing, routing permissions, auth */
-  ROUTING = 'Routing',
   I18N = 'i18n',
-  DATE = 'Date',
-  AUTOCOMPLETE = 'Autocomplete',
+
+  FORMS = 'Forms',
   COLOR = 'Color',
+  AUTOCOMPLETE = 'Autocomplete',
+  DATE = 'Date',
 }

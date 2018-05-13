@@ -212,6 +212,18 @@ export const packages: AngularPackage[] = [
     categories: [CT.SCROLL],
   },
   {
+    name: '@ngui/scrollable',
+    categories: [CT.SCROLL],
+  },
+  {
+    name: 'ngx-scrollspy',
+    categories: [CT.SCROLL],
+  },
+  {
+    name: 'ngx-cookie',
+    categories: [CT.DATA_FLOW],
+  },
+  {
     name: 'ng2-datepicker',
     categories: [CT.DATE, CT.FORMS],
   },
@@ -436,6 +448,18 @@ export const packages: AngularPackage[] = [
     categories: [CT.ROUTING, CT.I18N],
   },
   {
+    name: '@ngx-translate/core',
+    categories: [CT.I18N],
+  },
+  {
+    name: '@ngx-translate/http-loader',
+    categories: [CT.I18N],
+  },
+  {
+    name: 'angular-l10n',
+    categories: [CT.I18N],
+  },
+  {
     name: '@ngrx/schematics',
     categories: [CT.SCHEMATICS],
   },
@@ -490,5 +514,93 @@ export const packages: AngularPackage[] = [
   {
     name: 'ap-angular2-fullcalendar',
     categories: [CT.DATE],
+  },
+  {
+    name: '@ngx-formly/core',
+    categories: [CT.FORMS],
+  },
+  {
+    name: '@ngx-formly/material',
+    categories: [CT.FORMS],
+  },
+  {
+    name: '@ngx-formly/bootstrap',
+    categories: [CT.FORMS],
+  },
+  {
+    name: '@ngx-formly/ionic',
+    categories: [CT.FORMS],
+  },
+  {
+    name: '@ngx-formly/primeng',
+    categories: [CT.FORMS],
+  },
+  {
+    name: '@ngx-formly/kendo',
+    categories: [CT.FORMS],
+  },
+  {
+    name: 'angular-pipes',
+    categories: [CT.DATA_FLOW],
+  },
+  {
+    name: 'ngx-pipes',
+    categories: [CT.DATA_FLOW],
+  },
+  {
+    name: 'ng-pipes',
+    categories: [CT.DATA_FLOW],
+  },
+  {
+    name: 'angular-linky',
+    categories: [CT.WRAPPER],
+  },{
+    name: 'ng-animate',
+    categories: [CT.ANIMATIONS],
+  },{
+    name: 'angular2-template-loader',
+    categories: [],
+  },{
+    name: 'angular2-logger',
+    categories: [],
+  },{
+    name: 'ng2-meta',
+    categories: [],
+  },{
+    name: '@ngx-meta/core',
+    categories: [],
+  },{
+    name: 'angular2-disqus',
+    categories: [CT.WRAPPER],
+  },{
+    name: 'angularfire2',
+    categories: [CT.WRAPPER],
+  },{
+    name: 'ngx-disqus',
+    categories: [CT.WRAPPER],
+  },{
+    name: 'angular2-recaptcha',
+    categories: [CT.WRAPPER],
+  },{
+    name: 'ng-recaptcha',
+    categories: [CT.WRAPPER],
+  },{
+    name: 'angular2-cloudtasks',
+    categories: [CT.WRAPPER],
+  },{
+    name: 'pubnub-angular2',
+    categories: [CT.WRAPPER],
+  },{
+    name: 'augury-extension',
+    categories: [],
+  },{
+    name: 'angular2-prettyjson',
+    categories: [CT.WRAPPER],
+  },{
+    name: 'angular-playground',
+    categories: [],
+  },{
+    name: '@compodoc/ngd-cli',
+    categories: [CT.SCHEMATICS],
   },
 ];
