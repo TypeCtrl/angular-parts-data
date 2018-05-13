@@ -92,6 +92,10 @@ export const packages: AngularPackage[] = [
     categories: [CT.DRAG],
   },
   {
+    name: '@swimlane/ngx-dnd',
+    categories: [CT.DRAG],
+  },
+  {
     name: 'ng-drag-drop',
     categories: [CT.DRAG],
   },
@@ -110,6 +114,10 @@ export const packages: AngularPackage[] = [
   {
     name: '@swimlane/ngx-graph',
     categories: [CT.CHARTS],
+  },
+  {
+    name: '@swimlane/ngx-cron',
+    categories: [CT.FORMS],
   },
   {
     name: 'ng2-table',

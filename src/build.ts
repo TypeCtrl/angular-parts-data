@@ -16,24 +16,25 @@ async function build() {
     const update: any[] = [];
     const add: any[] = [];
     for (const pkg of group) {
-      const current = await index.search({
+      const currentRes = await index.search({
         query: pkg.name,
-        hitsPerPage: 1,
+        hitsPerPage: 25,
         typoTolerance: false,
         restrictSearchableAttributes: ['name'],
       });
+      const current = currentRes.hits.find(n => n.name === pkg.name);
       // get data from npms.io
       let info: any = await npm.get(pkg.name);
       info = { ...info, ...flags(info) };
       // set tags for algolia
       info._tags = pkg.categories;
       // add custom flags
-      if (!current.nbHits || current.hits[0].name !== pkg.name) {
+      if (!current) {
         add.push(info);
         console.log('PUSHING', pkg.name);
         continue;
       }
-      info.objectID = current.hits[0].objectID;
+      info.objectID = current.objectID;
       update.push(info);
     }
     if (add.length) {
