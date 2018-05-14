@@ -701,7 +701,11 @@ export const packages: AngularPackage[] = [
   },
   {
     name: '@auth0/angular-jwt',
-    categories: [],
+    categories: [CT.HTTP],
+  },
+  {
+    name: 'angular-oauth2-oidc',
+    categories: [CT.HTTP],
   },
   {
     name: '@ngx-auth/auth0',
@@ -830,5 +834,9 @@ export const packages: AngularPackage[] = [
   {
     name: '@covalent/highlight',
     categories: [CT.WRAPPER],
+  },
+  {
+    name: 'ngx-timeago',
+    categories: [CT.DATE],
   },
 ];
