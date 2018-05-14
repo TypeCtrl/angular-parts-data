@@ -308,6 +308,10 @@ export const packages: AngularPackage[] = [
     categories: [CT.WRAPPER],
   },
   {
+    name: '@ngx-prism/core',
+    categories: [CT.WRAPPER],
+  },
+  {
     name: 'angular2-voog-wysihtml',
     categories: [CT.WRAPPER],
   },
@@ -396,7 +400,7 @@ export const packages: AngularPackage[] = [
     categories: [CT.UI_FRAMEWORKS],
   },
   {
-    name: 'ionic2',
+    name: '@ionic/angular',
     categories: [CT.MOBILE],
   },
   {
@@ -794,5 +798,9 @@ export const packages: AngularPackage[] = [
   {
     name: 'ngx-feather-icon',
     categories: [CT.ICONS],
+  },
+  {
+    name: '@ng-idle/core',
+    categories: [],
   },
 ];
