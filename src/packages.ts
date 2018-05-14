@@ -40,6 +40,18 @@ export const packages: AngularPackage[] = [
     categories: [CT.UI_FRAMEWORKS],
   },
   {
+    name: '@ng-toolkit/init',
+    categories: [CT.SCHEMATICS, CT.SSR],
+  },
+  {
+    name: '@ng-toolkit/serverless',
+    categories: [CT.SSR],
+  },
+  {
+    name: 'ng-http-sw-proxy',
+    categories: [CT.HTTP],
+  },
+  {
     name: '@covalent/core',
     categories: [CT.UI_FRAMEWORKS],
   },
