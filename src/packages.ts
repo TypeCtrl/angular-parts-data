@@ -33,7 +33,7 @@ export const packages: AngularPackage[] = [
   },
   {
     name: 'ng-semantic',
-    categories: [CT.UI_FRAMEWORKS],
+    categories: [CT.UI_FRAMEWORKS, CT.WRAPPER],
   },
   {
     name: 'ng-lightning',
@@ -405,7 +405,7 @@ export const packages: AngularPackage[] = [
   },
   {
     name: 'ngx-onsenui',
-    categories: [CT.MOBILE, CT.UI_FRAMEWORKS],
+    categories: [CT.MOBILE, CT.WRAPPER],
   },
   {
     name: 'ngx-admin',
@@ -802,5 +802,21 @@ export const packages: AngularPackage[] = [
   {
     name: '@ng-idle/core',
     categories: [],
+  },
+  {
+    name: '@clr/icons',
+    categories: [CT.ICONS],
+  },
+  {
+    name: '@covalent/markdown',
+    categories: [],
+  },
+  {
+    name: '@covalent/dynamic-forms',
+    categories: [CT.FORMS],
+  },
+  {
+    name: '@covalent/highlight',
+    categories: [CT.WRAPPER],
   },
 ];
