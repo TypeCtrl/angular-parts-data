@@ -725,7 +725,7 @@ export const packages: AngularPackage[] = [
   },
   {
     name: 'ng-selectize',
-    categories: [CT.SELECT],
+    categories: [CT.SELECT, CT.WRAPPER],
   },
   {
     name: 'ngx-select-ex',

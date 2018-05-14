@@ -24,6 +24,7 @@ export interface NPM {
   npmUrl?: string;
   issuesUrl?: string;
   peerDependencies: { [name: string]: string };
+  dependencies: { [name: string]: string };
 }
 
 function fromJson(json: any): NPM {
@@ -37,6 +38,7 @@ function fromJson(json: any): NPM {
     author: _.get(json, 'collected.metadata.author.name'),
     license: json.collected.metadata.license,
     peerDependencies: json.collected.metadata.peerDependencies,
+    dependencies: json.collected.metadata.dependencies,
     // readme: json.collected.metadata.readme,
     keywords: json.collected.metadata.keywords,
     stars: _.get(json, 'collected.github.starsCount') || 0,
