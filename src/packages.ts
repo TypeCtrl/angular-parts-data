@@ -308,6 +308,10 @@ export const packages: AngularPackage[] = [
     categories: [CT.WRAPPER],
   },
   {
+    name: 'g2-codemirror-typescript',
+    categories: [CT.WRAPPER],
+  },
+  {
     name: 'angular2-voog-wysihtml',
     categories: [CT.WRAPPER],
   },
@@ -385,10 +389,6 @@ export const packages: AngularPackage[] = [
   },
   {
     name: 'md2',
-    categories: [CT.UI_FRAMEWORKS],
-  },
-  {
-    name: 'devextreme',
     categories: [CT.UI_FRAMEWORKS],
   },
   {

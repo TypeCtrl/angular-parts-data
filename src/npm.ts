@@ -2,8 +2,8 @@ import * as got from 'got';
 import * as _ from 'lodash';
 
 export interface NPM {
-  analyzed: number;
   name: string;
+  analyzed: number;
   version: string;
   description: string;
   updated: number;
@@ -12,7 +12,7 @@ export interface NPM {
   license?: string;
   // readme?: string;
   keywords?: string[];
-  stars?: number;
+  stars: number;
   downloadsCount: number;
   downloadsAcceleration: number;
   score: number;
@@ -39,7 +39,7 @@ function fromJson(json: any): NPM {
     peerDependencies: json.collected.metadata.peerDependencies,
     // readme: json.collected.metadata.readme,
     keywords: json.collected.metadata.keywords,
-    stars: _.get(json, 'collected.github.starsCount'),
+    stars: _.get(json, 'collected.github.starsCount') || 0,
     downloadsCount: json.evaluation.popularity.downloadsCount,
     downloadsAcceleration: json.evaluation.popularity.downloadsAcceleration,
     score: json.score.final,
