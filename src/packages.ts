@@ -16,10 +16,6 @@ export const packages: AngularPackage[] = [
     categories: [CT.UI_FRAMEWORKS, CT.CORE],
   },
   {
-    name: 'onsenui',
-    categories: [CT.UI_FRAMEWORKS, CT.MOBILE],
-  },
-  {
     name: 'ngx-bootstrap',
     categories: [CT.UI_FRAMEWORKS],
   },
@@ -174,6 +170,22 @@ export const packages: AngularPackage[] = [
   {
     name: '@ngx-loading-bar/core',
     categories: [],
+  },
+  {
+    name: 'ngx-store',
+    categories: [CT.DATA_FLOW],
+  },
+  {
+    name: 'angular-upcrop',
+    categories: [CT.IMAGES],
+  },
+  {
+    name: '@storybook/core',
+    categories: [CT.TESTING],
+  },
+  {
+    name: 'protractor',
+    categories: [CT.TESTING],
   },
   {
     name: '@nrwl/schematics',
@@ -392,8 +404,8 @@ export const packages: AngularPackage[] = [
     categories: [CT.MOBILE],
   },
   {
-    name: 'angular2-onsenui',
-    categories: [CT.MOBILE],
+    name: 'ngx-onsenui',
+    categories: [CT.MOBILE, CT.UI_FRAMEWORKS],
   },
   {
     name: 'ngx-admin',
@@ -425,6 +437,10 @@ export const packages: AngularPackage[] = [
   },
   {
     name: 'codelyzer',
+    categories: [CT.PRACTICES],
+  },
+  {
+    name: 'ng-packagr',
     categories: [CT.PRACTICES],
   },
   {
@@ -522,6 +538,26 @@ export const packages: AngularPackage[] = [
   {
     name: 'ap-angular2-fullcalendar',
     categories: [CT.DATE],
+  },
+  {
+    name: 'ngx-mask',
+    categories: [CT.FORMS],
+  },
+  {
+    name: 'ng2-currency-mask',
+    categories: [CT.FORMS],
+  },
+  {
+    name: 'ngx-currency',
+    categories: [CT.FORMS],
+  },
+  {
+    name: 'truly-ui',
+    categories: [CT.UI_FRAMEWORKS],
+  },
+  {
+    name: '@fagnerlima/ng-mask',
+    categories: [CT.FORMS, CT.WRAPPER],
   },
   {
     name: '@ngx-formly/core',
@@ -628,6 +664,10 @@ export const packages: AngularPackage[] = [
     categories: [CT.SCHEMATICS],
   },
   {
+    name: 'angular-librarian',
+    categories: [CT.SCHEMATICS],
+  },
+  {
     name: '@ctrl/ngx-emoji-mart',
     categories: [CT.FORMS],
   },
@@ -692,6 +732,10 @@ export const packages: AngularPackage[] = [
     categories: [CT.SELECT],
   },
   {
+    name: 'angular-cropperjs',
+    categories: [CT.WRAPPER, CT.IMAGES],
+  },
+  {
     name: 'angular-selector',
     categories: [CT.SELECT],
   },
@@ -741,6 +785,18 @@ export const packages: AngularPackage[] = [
   },
   {
     name: '@fortawesome/angular-fontawesome',
+    categories: [CT.ICONS],
+  },
+  {
+    name: 'angular-feather',
+    categories: [CT.ICONS],
+  },
+  {
+    name: 'ng2-weather-icons',
+    categories: [CT.ICONS],
+  },
+  {
+    name: 'ngx-feather-icon',
     categories: [CT.ICONS],
   },
 ];

@@ -22,6 +22,7 @@ export const enum Categories {
   DATA_FLOW = 'Data flow',
   /** linters, code style, codelyzer */
   PRACTICES = 'Practices',
+  TESTING = 'Testing',
   /** graphs, sparklines, d3 */
   CHARTS = 'Charts',
   /** infinite scroll */
