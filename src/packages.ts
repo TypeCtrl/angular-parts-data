@@ -637,7 +637,7 @@ export const packages: AngularPackage[] = [
   },
   {
     name: 'angularfire2',
-    categories: [CT.WRAPPER],
+    categories: [CT.WRAPPER, CT.HTTP],
   },
   {
     name: 'ngx-disqus',
