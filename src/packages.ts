@@ -854,11 +854,21 @@ export const packages: AngularPackage[] = [
   {
     name: 'ngx-in-view',
     categories: [CT.WRAPPER],
-  },{
+  },
+  {
     name: 'angular-star-rating',
     categories: [CT.WRAPPER],
-  },{
+  },
+  {
     name: 'ngx-rating',
     categories: [CT.FORMS],
-  }
+  },
+  {
+    name: 'ng-lazyload-image',
+    categories: [CT.IMAGES],
+  },
+  {
+    name: 'ngx-lazy-load-images',
+    categories: [CT.IMAGES],
+  },
 ];
