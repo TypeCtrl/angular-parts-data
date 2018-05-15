@@ -839,4 +839,26 @@ export const packages: AngularPackage[] = [
     name: 'ngx-timeago',
     categories: [CT.DATE],
   },
+  {
+    name: 'tslint-angular',
+    categories: [CT.PRACTICES],
+  },
+  {
+    name: 'ngast',
+    categories: [CT.PRACTICES],
+  },
+  {
+    name: 'ngx-card',
+    categories: [CT.WRAPPER, CT.FORMS],
+  },
+  {
+    name: 'ngx-in-view',
+    categories: [CT.WRAPPER],
+  },{
+    name: 'angular-star-rating',
+    categories: [CT.WRAPPER],
+  },{
+    name: 'ngx-rating',
+    categories: [CT.FORMS],
+  }
 ];
