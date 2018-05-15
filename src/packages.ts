@@ -212,10 +212,6 @@ export const packages: AngularPackage[] = [
     categories: [],
   },
   {
-    name: 'ngx-charts',
-    categories: [CT.CHARTS, CT.WRAPPER],
-  },
-  {
     name: 'ng2-charts',
     categories: [CT.CHARTS, CT.WRAPPER],
   },
