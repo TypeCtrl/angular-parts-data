@@ -14,6 +14,15 @@ const index = client.initIndex('packages');
 
 export const allPackages = packages.map<string>(_.property('name'));
 
+function difference(object: any, base: any): any {
+  return _.transform<any, any>(object, (result, value, key) => {
+    if (!_.isEqual(value, base[key])) {
+      result[key] =
+        _.isObject(value) && _.isObject(base[key]) ? difference(value, base[key]) : value;
+    }
+  });
+}
+
 async function* allAlgolia() {
   let browser = await index.browse('');
   yield browser.hits as any[];
@@ -44,8 +53,14 @@ async function build() {
       }
       console.log('UPDATING', pkg.name);
       const info = await updatePackage(pkg);
-      add.push(info);
+      // remove from array of all package names
       _.pull(allPackages, pkg.name);
+      // check if save is necessary
+      if (!Object.keys(difference(pkg, info)).length) {
+        console.log('SKIPPING', pkg.name);
+        continue;
+      }
+      add.push(info);
     }
     await index.addObjects(add);
   }
