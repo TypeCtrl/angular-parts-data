@@ -919,4 +919,116 @@ export const packages: AngularPackage[] = [
     name: 'ngx-livesearch',
     categories: [CT.AUTOCOMPLETE],
   },
+  {
+    name: 'ng-dynamic-forms',
+    categories: [CT.FORMS],
+  },
+  {
+    name: 'ngentest',
+    categories: [CT.TESTING],
+  },
+  {
+    name: 'ng2-input-hints',
+    categories: [CT.FORMS],
+  },
+  {
+    name: 'angular-rollup',
+    categories: [CT.PRACTICES],
+  },
+  {
+    name: 'ngx-smooth-dnd',
+    categories: [CT.DRAG],
+  },
+  {
+    name: 'angular-idle-preload',
+    categories: [CT.CORE],
+  },
+  {
+    name: 'ngx-quill-editor',
+    categories: [CT.WRAPPER],
+  },
+  {
+    name: '@cloudinary/angular',
+    categories: [CT.AV],
+  },
+  {
+    name: 'angular2-promise-buttons',
+    categories: [],
+  },
+  {
+    name: 'ngx-popper',
+    categories: [CT.WRAPPER],
+  },
+  {
+    name: 'ngx-konami',
+    categories: [CT.WRAPPER],
+  },
+  {
+    name: 'ng-data-picker',
+    categories: [CT.WRAPPER],
+  },
+  {
+    name: 'ngx-siema',
+    categories: [CT.WRAPPER, CT.IMAGES],
+  },
+  {
+    name: 'angular-esc',
+    categories: [],
+  },
+  {
+    name: 'angular-clickable-click',
+    categories: [],
+  },
+  {
+    name: 'ng-katex',
+    categories: [],
+  },
+  {
+    name: '@nebular/theme',
+    categories: [CT.UI_FRAMEWORKS],
+  },
+  {
+    name: '@nebular/auth',
+    categories: [CT.ROUTING],
+  },
+  {
+    name: 'angular-archwizard',
+    categories: [],
+  },
+  {
+    name: 'angular2-busy',
+    categories: [],
+  },
+  {
+    name: 'ng2-pdf-viewer',
+    categories: [],
+  },
+  {
+    name: 'ng2-card',
+    categories: [],
+  },
+  {
+    name: 'angular2-simple-countdown',
+    categories: [],
+  },
+  {
+    name: 'ngx-img-fallback',
+    categories: [],
+  },
+  {
+    name: 'file-droppa',
+    categories: [],
+  },
+  {
+    name: 'ng2-ace',
+    categories: [CT.WRAPPER],
+  },
+  {
+    name: 'ngx-restangular',
+    categories: [CT.HTTP],
+  },
+  {
+    name: 'ngx-order-pipe',
+    categories: [],
+  },
 ];
