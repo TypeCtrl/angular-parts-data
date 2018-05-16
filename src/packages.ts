@@ -867,4 +867,56 @@ export const packages: AngularPackage[] = [
     name: 'ngx-lazy-load-images',
     categories: [CT.IMAGES],
   },
+  {
+    name: 'ngx-contextmenu',
+    categories: [CT.OVERLAY],
+  },
+  {
+    name: 'ngx-captcha',
+    categories: [CT.WRAPPER],
+  },
+  {
+    name: 'ngx-recaptcha',
+    categories: [CT.WRAPPER],
+  },
+  {
+    name: 'ngx-paypal',
+    categories: [CT.WRAPPER],
+  },
+  {
+    name: 'ngx-embed-video',
+    categories: [CT.WRAPPER, CT.AV],
+  },
+  {
+    name: 'ngx-youtube-player',
+    categories: [CT.WRAPPER, CT.AV],
+  },
+  {
+    name: 'ngx-y2-player',
+    categories: [CT.WRAPPER, CT.AV],
+  },
+  {
+    name: 'ngx-youtube',
+    categories: [CT.WRAPPER, CT.AV],
+  },
+  {
+    name: 'angular-emojione',
+    categories: [CT.WRAPPER, CT.AV],
+  },
+  {
+    name: 'ng-emoji-picker-material',
+    categories: [CT.WRAPPER, CT.AV],
+  },
+  {
+    name: 'ngx-google-places-autocomplete',
+    categories: [CT.WRAPPER, CT.AUTOCOMPLETE],
+  },
+  {
+    name: 'angular-instantsearch',
+    categories: [CT.WRAPPER, CT.AUTOCOMPLETE],
+  },
+  {
+    name: 'ngx-livesearch',
+    categories: [CT.AUTOCOMPLETE],
+  },
 ];

@@ -30,7 +30,7 @@ export const enum Categories {
   /** Drag n Drop */
   DRAG = 'Drag',
   HTTP = 'Http',
-  /** Carousel */
+  /** Carousel, lazy loaders */
   IMAGES = 'Images',
   /** audio video players embeders */
   AV = 'Audio Video',
