@@ -1031,4 +1031,32 @@ export const packages: AngularPackage[] = [
     name: 'ngx-order-pipe',
     categories: [],
   },
+  {
+    name: 'ngx-loading',
+    categories: [],
+  },
+  {
+    name: 'ng4-loading-spinner',
+    categories: [],
+  },
+  {
+    name: 'angular-spinners',
+    categories: [],
+  },
+  {
+    name: 'angular2-ladda',
+    categories: [],
+  },
+  {
+    name: 'ngx-markdown',
+    categories: [],
+  },
+  {
+    name: 'ng2-markdown-to-html',
+    categories: [],
+  },
+  {
+    name: '@compodoc/compodoc',
+    categories: [CT.PRACTICES],
+  },
 ];
