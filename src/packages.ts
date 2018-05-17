@@ -1059,4 +1059,8 @@ export const packages: AngularPackage[] = [
     name: '@compodoc/compodoc',
     categories: [CT.PRACTICES],
   },
+  {
+    name: 'angular-speed-dial',
+    categories: [],
+  },
 ];
