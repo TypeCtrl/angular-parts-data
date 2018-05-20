@@ -1063,4 +1063,24 @@ export const packages: AngularPackage[] = [
     name: 'angular-speed-dial',
     categories: [],
   },
+  {
+    name: 'ack-angular',
+    categories: [],
+  },
+  {
+    name: '@ctrl/ngx-droppable',
+    categories: [],
+  },
+  {
+    name: 'angularfire-lite',
+    categories: [CT.WRAPPER, CT.HTTP],
+  },
+  {
+    name: 'chartjs-ng2',
+    categories: [CT.CHARTS, CT.WRAPPER],
+  },
+  {
+    name: 'angular2-chartjs',
+    categories: [CT.CHARTS, CT.WRAPPER],
+  },
 ];
