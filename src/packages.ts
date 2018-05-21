@@ -840,6 +840,10 @@ export const packages: AngularPackage[] = [
     categories: [CT.PRACTICES],
   },
   {
+    name: 'tslint-rules-valorsoft',
+    categories: [CT.PRACTICES],
+  },
+  {
     name: 'ngast',
     categories: [CT.PRACTICES],
   },
@@ -1069,7 +1073,7 @@ export const packages: AngularPackage[] = [
   },
   {
     name: '@ctrl/ngx-droppable',
-    categories: [],
+    categories: [CT.FORMS],
   },
   {
     name: 'angularfire-lite',
@@ -1082,5 +1086,29 @@ export const packages: AngularPackage[] = [
   {
     name: 'angular2-chartjs',
     categories: [CT.CHARTS, CT.WRAPPER],
+  },
+  {
+    name: '@ctrl/ngx-chartjs',
+    categories: [CT.CHARTS, CT.WRAPPER],
+  },
+  {
+    name: '@nrwl/bazel',
+    categories: [CT.SCHEMATICS],
+  },
+  {
+    name: 'ngx-pagination',
+    categories: [],
+  },
+  {
+    name: 'angular-gantt',
+    categories: [CT.CHARTS],
+  },
+  {
+    name: '@cloudtasks/ngx-image',
+    categories: [CT.AV],
+  },
+  {
+    name: 'ngx-img-cropper',
+    categories: [CT.AV],
   },
 ];
