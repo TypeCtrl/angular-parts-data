@@ -1,5 +1,7 @@
 import * as algoliasearch from 'algoliasearch';
 import * as _ from 'lodash';
+import chalk from 'chalk';
+import * as logging from 'debug';
 
 import { packages, AngularPackage } from './packages';
 import * as npm from './npm';
@@ -9,6 +11,7 @@ if (!process.env.ALGOLIA_KEY) {
   throw TypeError('provide ALGOLIA_KEY');
 }
 
+const debug = logging('parts');
 const client = algoliasearch('8HDRK698YZ', process.env.ALGOLIA_KEY);
 const index = client.initIndex('packages');
 
@@ -47,22 +50,27 @@ async function build() {
     for (const pkg of packages) {
       // remove extraneous packages
       if (!allPackages.includes(pkg.name)) {
-        console.log('Removing', pkg.name, pkg.objectID);
+        debug('Removing', pkg.name, pkg.objectID);
         await index.deleteObject(pkg.objectID);
         continue;
       }
-      console.log('UPDATING', pkg.name);
+      debug(chalk.green('Checking:'), pkg.name);
       const info = await updatePackage(pkg);
       // remove from array of all package names
       _.pull(allPackages, pkg.name);
       // check if save is necessary
+      // for (const x of Object.keys(difference(pkg, info))) {
+      //   console.log(x, pkg[x], info[x]);
+      // }
       if (!Object.keys(difference(pkg, info)).length) {
-        console.log('SKIPPING', pkg.name);
         continue;
       }
       add.push(info);
     }
-    await index.addObjects(add);
+    if (add.length) {
+      debug(add.map(n => n.name));
+      await index.addObjects(add);
+    }
   }
   // add new packages
   for (const group of _.chunk<string>(allPackages, 100)) {
@@ -73,7 +81,9 @@ async function build() {
       const info = await updatePackage(pkg);
       add.push(info);
     }
-    await index.addObjects(add);
+    if (add.length) {
+      await index.addObjects(add);
+    }
   }
 }
 
