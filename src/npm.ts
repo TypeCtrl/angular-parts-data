@@ -27,6 +27,19 @@ export interface NPM {
   dependencies: { [name: string]: string };
 }
 
+function lowerAccuracy(n) {
+  if (n > 10000) {
+    return _.round(n, -3);
+  }
+  if (n > 1000) {
+    return _.round(n, -2);
+  }
+  if (n > 100) {
+    return _.round(n, -1);
+  }
+  return _.round(n);
+}
+
 function fromJson(json: any): NPM {
   return {
     name: json.collected.metadata.name,
@@ -41,8 +54,8 @@ function fromJson(json: any): NPM {
     dependencies: json.collected.metadata.dependencies,
     // readme: json.collected.metadata.readme,
     keywords: json.collected.metadata.keywords,
-    stars: _.get(json, 'collected.github.starsCount') || 0,
-    downloadsCount: _.round(json.evaluation.popularity.downloadsCount, -1),
+    stars: lowerAccuracy(_.get(json, 'collected.github.starsCount') || 0),
+    downloadsCount: lowerAccuracy(json.evaluation.popularity.downloadsCount),
     downloadsAcceleration: _.round(json.evaluation.popularity.downloadsAcceleration, 2),
     score: _.round(json.score.final, 2),
     quality: _.round(json.score.detail.quality, 2),

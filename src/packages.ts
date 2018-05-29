@@ -1105,10 +1105,14 @@ export const packages: AngularPackage[] = [
   },
   {
     name: '@cloudtasks/ngx-image',
-    categories: [CT.AV],
+    categories: [CT.IMAGES],
   },
   {
     name: 'ngx-img-cropper',
-    categories: [CT.AV],
+    categories: [CT.IMAGES],
+  },
+  {
+    name: '@ngu/carousel',
+    categories: [CT.IMAGES],
   },
 ];
