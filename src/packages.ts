@@ -32,6 +32,10 @@ export const packages: AngularPackage[] = [
     categories: [CT.UI_FRAMEWORKS],
   },
   {
+    name: '@clr/ui',
+    categories: [CT.UI_FRAMEWORKS],
+  },
+  {
     name: 'ng-semantic',
     categories: [CT.UI_FRAMEWORKS, CT.WRAPPER],
   },
@@ -117,7 +121,7 @@ export const packages: AngularPackage[] = [
   },
   {
     name: '@swimlane/ngx-charts',
-    categories: [CT.DATA_TABLE],
+    categories: [CT.CHARTS],
   },
   {
     name: '@swimlane/ngx-ui',
@@ -181,7 +185,7 @@ export const packages: AngularPackage[] = [
   },
   {
     name: '@ngx-loading-bar/core',
-    categories: [],
+    categories: [CT.SPINNER],
   },
   {
     name: 'ngx-store',
@@ -353,7 +357,7 @@ export const packages: AngularPackage[] = [
   },
   {
     name: 'ng2-img-cropper',
-    categories: [],
+    categories: [CT.IMAGES],
   },
   {
     name: 'angular2-grid',
@@ -457,11 +461,11 @@ export const packages: AngularPackage[] = [
   },
   {
     name: '@ctrl/ngx-csv',
-    categories: [],
+    categories: [CT.DATA_TABLE],
   },
   {
     name: '@ctrl/ngx-github-buttons',
-    categories: [],
+    categories: [CT.DOCS],
   },
   {
     name: 'angular-router-loader',
@@ -617,7 +621,7 @@ export const packages: AngularPackage[] = [
   },
   {
     name: 'angular2-logger',
-    categories: [],
+    categories: [CT.CORE],
   },
   {
     name: 'ng2-meta',
@@ -657,7 +661,7 @@ export const packages: AngularPackage[] = [
   },
   {
     name: 'augury-extension',
-    categories: [],
+    categories: [CT.DOCS, CT.PRACTICES],
   },
   {
     name: 'angular2-prettyjson',
@@ -697,27 +701,27 @@ export const packages: AngularPackage[] = [
   },
   {
     name: '@auth0/angular-jwt',
-    categories: [CT.HTTP],
+    categories: [CT.HTTP, CT.AUTH],
   },
   {
     name: 'angular-oauth2-oidc',
-    categories: [CT.HTTP],
+    categories: [CT.HTTP,CT.AUTH],
   },
   {
     name: '@ngx-auth/auth0',
-    categories: [],
+    categories: [CT.AUTH],
   },
   {
     name: '@elderbyte/ngx-jwt-auth',
-    categories: [],
+    categories: [CT.AUTH],
   },
   {
     name: '@ngx-auth/core',
-    categories: [],
+    categories: [CT.AUTH],
   },
   {
     name: 'ng2-jwt',
-    categories: [],
+    categories: [CT.AUTH],
   },
   {
     name: 'frontal',
@@ -777,7 +781,7 @@ export const packages: AngularPackage[] = [
   },
   {
     name: 'ngx-papaparse',
-    categories: [],
+    categories: [CT.DATA_TABLE],
   },
   {
     name: 'angular-bootstrap-datetimepicker',
@@ -813,7 +817,7 @@ export const packages: AngularPackage[] = [
   },
   {
     name: '@ng-idle/core',
-    categories: [],
+    categories: [CT.SPINNER],
   },
   {
     name: '@clr/icons',
@@ -821,7 +825,7 @@ export const packages: AngularPackage[] = [
   },
   {
     name: '@covalent/markdown',
-    categories: [],
+    categories: [CT.MARKDOWN],
   },
   {
     name: '@covalent/dynamic-forms',
@@ -957,7 +961,7 @@ export const packages: AngularPackage[] = [
   },
   {
     name: 'angular2-promise-buttons',
-    categories: [],
+    categories: [CT.SPINNER],
   },
   {
     name: 'ngx-popper',
@@ -977,11 +981,11 @@ export const packages: AngularPackage[] = [
   },
   {
     name: 'angular-esc',
-    categories: [],
+    categories: [CT.DATA_FLOW],
   },
   {
     name: 'angular-clickable-click',
-    categories: [],
+    categories: [CT.DATA_FLOW],
   },
   {
     name: 'ng-katex',
@@ -1037,15 +1041,15 @@ export const packages: AngularPackage[] = [
   },
   {
     name: 'ngx-loading',
-    categories: [],
+    categories: [CT.SPINNER],
   },
   {
     name: 'ng4-loading-spinner',
-    categories: [],
+    categories: [CT.SPINNER],
   },
   {
     name: 'angular-spinners',
-    categories: [],
+    categories: [CT.SPINNER],
   },
   {
     name: 'angular2-ladda',
@@ -1053,11 +1057,11 @@ export const packages: AngularPackage[] = [
   },
   {
     name: 'ngx-markdown',
-    categories: [],
+    categories: [CT.MARKDOWN],
   },
   {
     name: 'ng2-markdown-to-html',
-    categories: [],
+    categories: [CT.MARKDOWN],
   },
   {
     name: '@compodoc/compodoc',
@@ -1114,5 +1118,53 @@ export const packages: AngularPackage[] = [
   {
     name: '@ngu/carousel',
     categories: [CT.IMAGES],
+  },
+  {
+    name: 'ng-time-picker',
+    categories: [CT.FORMS],
+  },
+  {
+    name: 'ng2-analogical-countdown',
+    categories: [CT.FORMS],
+  },
+  {
+    name: 'angular-tree-component',
+    categories: [CT.FORMS],
+  },
+  {
+    name: 'angular-font-awesome',
+    categories: [CT.ICONS],
+  },
+  {
+    name: 'ngx-cookie-service',
+    categories: [CT.ICONS],
+  },
+  {
+    name: 'babel-plugin-angular2-annotations',
+    categories: [CT.SCHEMATICS],
+  },
+  {
+    name: 'angular-resizable-element',
+    categories: [CT.DRAG],
+  },
+  {
+    name: 'angular-confirmation-popover',
+    categories: [CT.OVERLAY],
+  },
+  {
+    name: 'angular-gauge',
+    categories: [CT.CHARTS],
+  },
+  {
+    name: 'angularx-flatpickr',
+    categories: [CT.DATE, CT.WRAPPER],
+  },
+  {
+    name: 'angular-text-input-highlight',
+    categories: [CT.FORMS],
+  },
+  {
+    name: 'angular-text-input-autocomplete',
+    categories: [CT.FORMS],
   },
 ];

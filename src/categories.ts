@@ -2,15 +2,16 @@ export const enum Categories {
   ANIMATIONS = 'Animations',
   /** Boilerplate / scaffold / Yeoman / stack ensemble / seed */
   SCHEMATICS = 'Schematics',
+  DOCS = 'Docs',
   /** responsive, flexbox, css grid */
   LAYOUT = 'Layout',
   /** serverside rendering, Universal */
   SSR = 'SSR',
   /** replacements for @angular/core or similar */
   CORE = 'Core',
-  /** routing, routing permissions, auth */
+  /** routing, routing permissions */
   ROUTING = 'Routing',
-  /** Overlay, modal, dialog, lightbox, popup, portal */
+  /** Overlay, modal, dialog, lightbox, popover, portal */
   OVERLAY = 'Overlay',
   /** mobile focused like onsen or ionic */
   MOBILE = 'Mobile',
@@ -40,6 +41,9 @@ export const enum Categories {
   UI_FRAMEWORKS = 'UI Frameworks',
   /** helpers for commonjs packages */
   WRAPPER = 'Wrapper',
+  MARKDOWN = 'Markdown',
+  SPINNER = 'Spinner',
+  AUTH = 'Auth',
   I18N = 'i18n',
 
   FORMS = 'Forms',
