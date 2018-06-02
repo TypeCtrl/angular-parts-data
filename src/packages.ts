@@ -1167,4 +1167,16 @@ export const packages: AngularPackage[] = [
     name: 'angular-text-input-autocomplete',
     categories: [CT.FORMS],
   },
+  {
+    name: 'ngx-log-monitor',
+    categories: [CT.NOTIFICATION],
+  },
+  {
+    name: 'rxdb',
+    categories: [CT.DATA_FLOW],
+  },
+  {
+    name: 'ngx-i18nsupport',
+    categories: [CT.I18N],
+  },
 ];
