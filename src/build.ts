@@ -54,13 +54,13 @@ async function build() {
         await index.deleteObject(pkg.objectID);
         continue;
       }
-      debug(chalk.green('Checking:'), pkg.name);
+      debug(chalk.gray('Checking:'), pkg.name);
       const info = await updatePackage(pkg);
       // remove from array of all package names
       _.pull(allPackages, pkg.name);
       // check if save is necessary
       // for (const x of Object.keys(difference(pkg, info))) {
-      //   console.log(x, pkg[x], info[x]);
+      //   debug(x, pkg[x], info[x]);
       // }
       if (!Object.keys(difference(pkg, info)).length) {
         continue;
@@ -76,7 +76,7 @@ async function build() {
   for (const group of _.chunk<string>(allPackages, 100)) {
     const add: any[] = [];
     for (const pkgName of group) {
-      console.log('ADDING', pkgName);
+      debug(chalk.cyan('ADDING', pkgName));
       const pkg: AngularPackage = packages.find(n => n.name === pkgName) as AngularPackage;
       const info = await updatePackage(pkg);
       add.push(info);
@@ -89,7 +89,7 @@ async function build() {
 
 if (!module.parent) {
   build()
-    .then(() => console.log('build success'))
+    .then(() => debug(chalk.greenBright('build success!')))
     .catch(e => {
       console.error(e);
       process.exit(1);
