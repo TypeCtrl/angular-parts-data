@@ -1179,4 +1179,12 @@ export const packages: AngularPackage[] = [
     name: 'ngx-i18nsupport',
     categories: [CT.I18N],
   },
+  {
+    name: 'ngx-bearbones',
+    categories: [CT.UI_FRAMEWORKS],
+  },
+  {
+    name: 'ngx-speculoos',
+    categories: [CT.TESTING],
+  },
 ];
