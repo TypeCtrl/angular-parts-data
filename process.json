@@ -2,7 +2,7 @@
   "apps": [
     {
       "name": "parts-cron",
-      "script": "dist/src/cron.js",
+      "script": "dist/cron.js",
       "env": {
         "DEBUG": "parts"
       }
