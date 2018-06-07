@@ -17,9 +17,9 @@ setInterval(
 );
 
 
-build()
-    .then(() => debug(chalk.greenBright('build success!')))
-    .catch(e => {
-      console.error(e);
-      process.exit(1);
-    });
+// build()
+//     .then(() => debug(chalk.greenBright('build success!')))
+//     .catch(e => {
+//       console.error(e);
+//       process.exit(1);
+//     });
