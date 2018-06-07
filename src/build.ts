@@ -43,7 +43,7 @@ async function updatePackage(pkg: any) {
   return info;
 }
 
-async function build() {
+export async function build() {
   // update new packages
   for await (const packages of allAlgolia()) {
     const add: any[] = [];

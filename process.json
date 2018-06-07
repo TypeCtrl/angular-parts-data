@@ -1,0 +1,11 @@
+{
+  "apps": [
+    {
+      "name": "parts-cron",
+      "script": "build/src/cron.js",
+      "env": {
+        "DEBUG": "parts"
+      }
+    }
+  ]
+}
