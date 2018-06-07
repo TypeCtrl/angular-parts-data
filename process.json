@@ -3,6 +3,7 @@
     {
       "name": "parts-cron",
       "script": "dist/cron.js",
+      "interpreter": "./node_modules/.bin/ts-node",
       "env": {
         "DEBUG": "parts"
       }
