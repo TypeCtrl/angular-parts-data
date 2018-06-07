@@ -50,7 +50,7 @@ export async function build() {
     for (const pkg of packages) {
       // remove extraneous packages
       if (!allPackages.includes(pkg.name)) {
-        debug('Removing', pkg.name, pkg.objectID);
+        debug(chalk.red('Removing'), pkg.name, pkg.objectID);
         await index.deleteObject(pkg.objectID);
         continue;
       }
