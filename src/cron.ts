@@ -13,5 +13,5 @@ setInterval(
         console.error(e);
         process.exit(1);
       }),
-  14400, // 4 hours
+  14400 * 1000, // 4 hours
 );
