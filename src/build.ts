@@ -26,6 +26,15 @@ function difference(object: any, base: any): any {
   });
 }
 
+async function* allAlgolia() {
+  let browser = await index.browse('');
+  yield browser.hits as any[];
+  while (browser.cursor) {
+    browser = await index.browseFrom(browser.cursor);
+    yield browser.hits as any[];
+  }
+}
+
 async function updatePackage(pkg: any) {
   let info: any = await npm.get(pkg.name);
   info.objectID = pkg.name;
@@ -36,15 +45,9 @@ async function updatePackage(pkg: any) {
 
 export async function build() {
   // update new packages
-  let browser: any = false;
-  while (!browser || browser.cursor) {
-    if (browser) {
-      browser = await index.browseFrom(browser.cursor);
-    } else {
-      browser = await index.browse('');
-    }
+  for await (const packages of allAlgolia()) {
     const add: any[] = [];
-    for (const pkg of browser.hits) {
+    for (const pkg of packages) {
       // remove extraneous packages
       if (!allPackages.includes(pkg.name)) {
         debug(chalk.red('Removing'), pkg.name, pkg.objectID);
@@ -69,7 +72,6 @@ export async function build() {
       await index.addObjects(add);
     }
   }
-
   // add new packages
   for (const group of _.chunk<string>(allPackages, 100)) {
     const add: any[] = [];
