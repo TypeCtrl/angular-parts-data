@@ -15,7 +15,7 @@ const debug = logging('parts');
 const client = algoliasearch('8HDRK698YZ', process.env.ALGOLIA_KEY);
 const index = client.initIndex('packages');
 
-export const allPackages = packages.map<string>(_.property('name'));
+export const getAllPackages = () => packages.map<string>(_.property('name'));
 
 function difference(object: any, base: any): any {
   return _.transform<any, any>(object, (result, value, key) => {
@@ -44,6 +44,7 @@ async function updatePackage(pkg: any) {
 }
 
 export async function build() {
+  const allPackages = getAllPackages();
   // update new packages
   for await (const packages of allAlgolia()) {
     const add: any[] = [];
