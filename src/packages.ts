@@ -1187,4 +1187,12 @@ export const packages: AngularPackage[] = [
     name: 'ngx-speculoos',
     categories: [CT.TESTING],
   },
+  {
+    name: 'ngx-build-plus',
+    categories: [CT.SCHEMATICS],
+  },
+  {
+    name: 'generator-ngx-rocket',
+    categories: [CT.SCHEMATICS],
+  },
 ];
