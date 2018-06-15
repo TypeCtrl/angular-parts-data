@@ -1195,4 +1195,8 @@ export const packages: AngularPackage[] = [
     name: 'generator-ngx-rocket',
     categories: [CT.SCHEMATICS],
   },
+  {
+    name: '@ctrl/ngx-numbered-codeblock',
+    categories: [CT.WRAPPER],
+  },
 ];
