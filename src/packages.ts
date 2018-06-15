@@ -1196,6 +1196,10 @@ export const packages: AngularPackage[] = [
     categories: [CT.SCHEMATICS],
   },
   {
+    name: 'generator-ng-fullstack',
+    categories: [CT.SCHEMATICS],
+  },
+  {
     name: '@ctrl/ngx-numbered-codeblock',
     categories: [CT.WRAPPER],
   },
