@@ -1211,4 +1211,8 @@ export const packages: AngularPackage[] = [
     name: 'ng2-avatar',
     categories: [CT.IMAGES],
   },
+  {
+    name: 'ionic-text-avatar',
+    categories: [CT.IMAGES, CT.MOBILE],
+  },
 ];
