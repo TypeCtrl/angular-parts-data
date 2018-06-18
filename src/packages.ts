@@ -1203,4 +1203,12 @@ export const packages: AngularPackage[] = [
     name: '@ctrl/ngx-numbered-codeblock',
     categories: [CT.WRAPPER],
   },
+  {
+    name: 'ngx-avatar',
+    categories: [CT.IMAGES],
+  },
+  {
+    name: 'ng2-avatar',
+    categories: [CT.IMAGES],
+  },
 ];
