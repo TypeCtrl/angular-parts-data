@@ -1215,4 +1215,8 @@ export const packages: AngularPackage[] = [
     name: 'ionic-text-avatar',
     categories: [CT.IMAGES, CT.MOBILE],
   },
+  {
+    name: '@nicky-lenaers/ngx-scroll-to',
+    categories: [CT.SCROLL],
+  },
 ];
