@@ -576,26 +576,6 @@ export const packages: AngularPackage[] = [
     categories: [CT.FORMS],
   },
   {
-    name: '@ngx-formly/material',
-    categories: [CT.FORMS],
-  },
-  {
-    name: '@ngx-formly/bootstrap',
-    categories: [CT.FORMS],
-  },
-  {
-    name: '@ngx-formly/ionic',
-    categories: [CT.FORMS],
-  },
-  {
-    name: '@ngx-formly/primeng',
-    categories: [CT.FORMS],
-  },
-  {
-    name: '@ngx-formly/kendo',
-    categories: [CT.FORMS],
-  },
-  {
     name: 'angular-pipes',
     categories: [CT.DATA_FLOW],
   },
@@ -705,7 +685,7 @@ export const packages: AngularPackage[] = [
   },
   {
     name: 'angular-oauth2-oidc',
-    categories: [CT.HTTP,CT.AUTH],
+    categories: [CT.HTTP, CT.AUTH],
   },
   {
     name: '@ngx-auth/auth0',
@@ -1218,5 +1198,9 @@ export const packages: AngularPackage[] = [
   {
     name: '@nicky-lenaers/ngx-scroll-to',
     categories: [CT.SCROLL],
+  },
+  {
+    name: 'ngx-echarts',
+    categories: [CT.CHARTS, CT.WRAPPER],
   },
 ];
