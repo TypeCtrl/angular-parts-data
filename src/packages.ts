@@ -1203,4 +1203,8 @@ export const packages: AngularPackage[] = [
     name: 'ngx-echarts',
     categories: [CT.CHARTS, CT.WRAPPER],
   },
+  {
+    name: 'ng2-right-click-menu',
+    categories: [CT.OVERLAY],
+  },
 ];
