@@ -432,6 +432,10 @@ export const packages: AngularPackage[] = [
     categories: [CT.DATA_FLOW],
   },
   {
+    name: '@ngxs/store',
+    categories: [CT.DATA_FLOW],
+  },
+  {
     name: '@ngrx/store',
     categories: [CT.DATA_FLOW],
   },
