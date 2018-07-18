@@ -1211,4 +1211,8 @@ export const packages: AngularPackage[] = [
     name: 'ng2-right-click-menu',
     categories: [CT.OVERLAY],
   },
+  {
+    name: '@datorama/akita',
+    categories: [CT.DATA_FLOW],
+  }
 ];
