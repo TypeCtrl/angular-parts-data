@@ -1214,5 +1214,9 @@ export const packages: AngularPackage[] = [
   {
     name: '@datorama/akita',
     categories: [CT.DATA_FLOW],
-  }
+  },
+  {
+    name: 'ngx-valdemort',
+    categories: [CT.FORMS],
+  },
 ];
