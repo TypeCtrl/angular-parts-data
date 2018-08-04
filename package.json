@@ -21,7 +21,7 @@
     "firebase:logs": "firebase functions:log"
   },
   "dependencies": {
-    "algoliasearch": "^3.29.0",
+    "algoliasearch": "^3.30.0",
     "chalk": "^2.4.1",
     "debug": "^3.1.0",
     "got": "^9.0.0",
@@ -32,18 +32,18 @@
     "@types/algoliasearch": "^3.27.5",
     "@types/debug": "0.0.30",
     "@types/got": "^8.3.3",
-    "@types/jest": "^23.3.0",
-    "@types/lodash": "^4.14.112",
-    "@types/node": "^10.5.2",
+    "@types/jest": "^23.3.1",
+    "@types/lodash": "^4.14.116",
+    "@types/node": "^10.5.6",
     "@types/semver": "^5.5.0",
-    "jest": "^23.4.1",
+    "jest": "^23.4.2",
     "rimraf": "^2.6.2",
-    "ts-jest": "^23.0.1",
+    "ts-jest": "^23.1.2",
     "ts-node": "^7.0.0",
     "tslint": "^5.11.0",
-    "tslint-config-prettier": "^1.13.0",
+    "tslint-config-prettier": "^1.14.0",
     "tslint-config-standard": "^7.1.0",
-    "typescript": "^3.0.0"
+    "typescript": "^3.0.1"
   },
   "repository": {
     "type": "git",

@@ -1219,4 +1219,8 @@ export const packages: AngularPackage[] = [
     name: 'ngx-valdemort',
     categories: [CT.FORMS],
   },
+  {
+    name: 'ng-github-button',
+    categories: [],
+  },
 ];
