@@ -1223,4 +1223,8 @@ export const packages: AngularPackage[] = [
     name: 'ng-github-button',
     categories: [],
   },
+  {
+    name: 'ng-fullcalendar',
+    categories: [CT.WRAPPER, CT.DATE],
+  },
 ];
