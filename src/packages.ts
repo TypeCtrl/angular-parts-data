@@ -1227,4 +1227,16 @@ export const packages: AngularPackage[] = [
     name: 'ng-fullcalendar',
     categories: [CT.WRAPPER, CT.DATE],
   },
+  {
+    name: 'ngx-auth-firebaseui',
+    categories: [CT.AUTH]
+  },
+  {
+    name: 'ngx-linkifyjs',
+    categories: [CT.WRAPPER]
+  },
+  {
+    name: '@feeloor/ng-extension-schematics',
+    categories: [CT.SCHEMATICS]
+  },
 ];
