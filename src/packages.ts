@@ -864,6 +864,10 @@ export const packages: AngularPackage[] = [
     categories: [CT.OVERLAY],
   },
   {
+    name: '@ctrl/ngx-rightclick',
+    categories: [CT.OVERLAY],
+  },
+  {
     name: 'ngx-captcha',
     categories: [CT.WRAPPER],
   },
