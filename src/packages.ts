@@ -432,10 +432,6 @@ export const packages: AngularPackage[] = [
     categories: [CT.DATA_FLOW],
   },
   {
-    name: '@ngxs/store',
-    categories: [CT.DATA_FLOW],
-  },
-  {
     name: '@ngrx/store',
     categories: [CT.DATA_FLOW],
   },
@@ -1242,5 +1238,45 @@ export const packages: AngularPackage[] = [
   {
     name: '@feeloor/ng-extension-schematics',
     categories: [CT.SCHEMATICS]
+  },
+  {
+    name: '@asymmetrik/ngx-leaflet',
+    categories: [CT.WRAPPER],
+  },
+  {
+    name: '@angular-material-extensions/password-strength',
+    categories: [CT.FORMS],
+  },
+  {
+    name: '@angular-material-extensions/contacts',
+    categories: [],
+  },
+  {
+    name: '@angular-material-extensions/pages',
+    categories: [],
+  },
+  {
+    name: '@angular-material-extensions/link-preview',
+    categories: [],
+  },
+  {
+    name: '@angular-material-extensions/layout',
+    categories: [],
+  },
+  {
+    name: '@angular-material-extensions/faq',
+    categories: [],
+  },
+  {
+    name: 'ngx-combination-generator',
+    categories: [],
+  },
+  {
+    name: 'ngx-mapbox-gl',
+    categories: [],
+  },
+  {
+    name: 'angular2-in-memory-web-api',
+    categories: [CT.HTTP],
   },
 ];
