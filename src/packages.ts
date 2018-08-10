@@ -1279,4 +1279,16 @@ export const packages: AngularPackage[] = [
     name: 'angular2-in-memory-web-api',
     categories: [CT.HTTP],
   },
+  {
+    name: 'ng2-fancy-image-uploader',
+    categories: [CT.IMAGES],
+  },
+  {
+    name: 'angular2-image-upload',
+    categories: [CT.IMAGES],
+  },
+  {
+    name: 'ng-image-input-with-preview',
+    categories: [CT.IMAGES],
+  },
 ];
