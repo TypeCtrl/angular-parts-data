@@ -313,11 +313,11 @@ export const packages: AngularPackage[] = [
   },
   {
     name: '@ctrl/ngx-codemirror',
-    categories: [CT.WRAPPER],
+    categories: [CT.WRAPPER, CT.FORMS],
   },
   {
     name: 'ng2-codemirror',
-    categories: [CT.WRAPPER],
+    categories: [CT.WRAPPER, CT.FORMS],
   },
   {
     name: '@ngx-prism/core',
@@ -937,7 +937,7 @@ export const packages: AngularPackage[] = [
   },
   {
     name: 'ngx-quill-editor',
-    categories: [CT.WRAPPER],
+    categories: [CT.WRAPPER, CT.FORMS],
   },
   {
     name: '@cloudinary/angular',
@@ -1290,5 +1290,9 @@ export const packages: AngularPackage[] = [
   {
     name: 'ng-image-input-with-preview',
     categories: [CT.IMAGES],
+  },
+  {
+    name: 'ngx-quill',
+    categories: [CT.WRAPPER, CT.FORMS],
   },
 ];
