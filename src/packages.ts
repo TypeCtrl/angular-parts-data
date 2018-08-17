@@ -1295,4 +1295,8 @@ export const packages: AngularPackage[] = [
     name: 'ngx-quill',
     categories: [CT.WRAPPER, CT.FORMS],
   },
+  {
+    name: 'ngx-ui-switch',
+    categories: [CT.FORMS],
+  },
 ];
