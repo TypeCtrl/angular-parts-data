@@ -141,7 +141,7 @@ export const packages: AngularPackage[] = [
   },
   {
     name: 'ng2-progress',
-    categories: [],
+    categories: [CT.PROGRESS],
   },
   {
     name: 'angular2-datatable',
@@ -1298,5 +1298,53 @@ export const packages: AngularPackage[] = [
   {
     name: 'ngx-ui-switch',
     categories: [CT.FORMS],
+  },
+  {
+    name: 'ng-circle-progress',
+    categories: [CT.PROGRESS],
+  },
+  {
+    name: 'angular-svg-round-progressbar',
+    categories: [CT.PROGRESS],
+  },
+  {
+    name: 'ngx-spinner',
+    categories: [CT.PROGRESS],
+  },
+  {
+    name: 'ng2-slim-loading-bar',
+    categories: [CT.PROGRESS],
+  },
+  {
+    name: '@ngx-progressbar/core',
+    categories: [CT.PROGRESS],
+  },
+  {
+    name: '@ngx-share/buttons',
+    categories: [],
+  },
+  {
+    name: 'ngx-highlightjs',
+    categories: [CT.WRAPPER],
+  },
+  {
+    name: 'ngx-wordpress',
+    categories: [],
+  },
+  {
+    name: 'ng-teximate',
+    categories: [CT.ANIMATIONS],
+  },
+  {
+    name: 'ngx-scrollbar',
+    categories: [CT.SCROLL],
+  },
+  {
+    name: '@ngx-gallery/core',
+    categories: [CT.IMAGES],
+  },
+  {
+    name: '@ngx-fire-uploader/core',
+    categories: [],
   },
 ];

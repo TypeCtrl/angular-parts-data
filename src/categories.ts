@@ -26,6 +26,7 @@ export const enum Categories {
   TESTING = 'Testing',
   /** graphs, sparklines, d3 */
   CHARTS = 'Charts',
+  PROGRESS = 'Progress',
   /** infinite scroll */
   SCROLL = 'Scroll',
   /** Drag n Drop */
