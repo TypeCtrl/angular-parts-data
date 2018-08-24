@@ -1347,4 +1347,12 @@ export const packages: AngularPackage[] = [
     name: '@ngx-fire-uploader/core',
     categories: [],
   },
+  {
+    name: 'apollo-angular-boost',
+    categories: [CT.DATA_FLOW],
+  },
+  {
+    name: '@nativescript/schematics',
+    categories: [CT.SCHEMATICS],
+  },
 ];
