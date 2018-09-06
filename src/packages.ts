@@ -1260,10 +1260,6 @@ export const packages: AngularPackage[] = [
     categories: [],
   },
   {
-    name: '@angular-material-extensions/layout',
-    categories: [],
-  },
-  {
     name: '@angular-material-extensions/faq',
     categories: [],
   },
