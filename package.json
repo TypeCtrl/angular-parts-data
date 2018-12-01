@@ -31,7 +31,7 @@
   },
   "devDependencies": {
     "@types/algoliasearch": "3.30.1",
-    "@types/debug": "0.0.30",
+    "@types/debug": "0.0.31",
     "@types/got": "8.3.4",
     "@types/jest": "23.3.2",
     "@types/lodash": "4.14.116",
